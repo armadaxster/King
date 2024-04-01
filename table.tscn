@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://byt8uebhq0hdj"]
+
+[ext_resource type="Script" path="res://table.gd" id="1_phl7e"]
+
+[node name="Table" type="Node2D"]
+script = ExtResource("1_phl7e")
+
+[node name="P0" type="Node2D" parent="."]
+position = Vector2(700, 550)
