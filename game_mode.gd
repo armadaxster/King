@@ -1,8 +1,27 @@
 extends Node
 
-var players = {}
+var client_info = {
+	"name": "Kimolaki?",
+	"is_player": false
+}
 
-var playdeck: Array = range(1,53)
+var clients : Dictionary  = {}
+
+var players : Dictionary  = {}
+
+var player_list : Array
+
+var non_players : Dictionary  = {}
+
+var playdeck : Array 
+
+var player_hands : Dictionary 
+
+var my_hand : Array
+
+var card_held = false
+
+var cards_hovering : Array
 
 const deck = {
 	c13 = {
