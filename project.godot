@@ -21,7 +21,7 @@ GameMode="*res://game_mode.gd"
 
 [display]
 
-window/size/viewport_width=960
+window/size/viewport_width=1200
 window/size/viewport_height=960
 
 [editor]

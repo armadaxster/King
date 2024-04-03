@@ -46,7 +46,6 @@ func start_game(game_scene_path = "res://table.tscn"):
 @rpc("authority", "call_local", "reliable")
 func process_player_data(player_list_data:Array):
 	GameMode.player_list = player_list_data
-	print("I am:", multiplayer.get_unique_id()," and ",GameMode.player_list)
 
 @rpc("call_local", "any_peer", "reliable")
 func register_client(info):

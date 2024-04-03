@@ -1,5 +1,7 @@
 extends Node
 
+signal play_card(played_card)
+
 var client_info = {
 	"name": "Kimolaki?",
 	"is_player": false
@@ -23,7 +25,20 @@ var card_held = false
 
 var cards_hovering : Array
 
+var played_card_counter : int = 0
+
+var my_Pos : Vector2
+
+var cards_taken: Array
+
 const deck = {
+	c0 = {
+		id = 0,
+		name = "closed_card",
+		suit = "undetermined",
+		value = 0,
+		sprite = "res://sprites/deck/Back.png"
+	},
 	c13 = {
 		id = 13,
 		name = "ace_of_clubs",
