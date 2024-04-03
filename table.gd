@@ -130,6 +130,8 @@ func take_center():
 
 	GameMode.cards_taken.sort()
 	$CardsTaken.clear()
+	$CardsTaken.text = ""
+	print("iam :: ", multiplayer.get_unique_id()," array : ", GameMode.cards_taken, "text: ", $CardsTaken.text)
 	for c in GameMode.cards_taken:
 		$CardsTaken.text = str($CardsTaken.text, GameMode.deck[str("c",c)]["name"], "\n")
 
